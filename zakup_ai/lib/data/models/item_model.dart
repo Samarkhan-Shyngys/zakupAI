@@ -15,6 +15,7 @@ class ItemStatusConverter extends TypeConverter<ItemStatus, int> {
 }
 
 // Drift-таблица элементов (генерирует ItemData, ItemsCompanion)
+@DataClassName('ItemData')
 class Items extends Table {
   IntColumn get id => integer().autoIncrement()();
   TextColumn get title => text()();
